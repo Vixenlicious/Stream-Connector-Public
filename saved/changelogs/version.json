@@ -1,0 +1,131 @@
+{
+  "4.8.0": [
+    // Auto-registration & gift mapping
+    "NEW: Fuzzy name matching for Hyroe gift auto-registration — mismatched casing or slight variations now resolve to the correct giftMapping entry, so icons and coinCosts display properly.",
+    "NEW: Fallback delays for unspecified gifts in HYROE_GIFTS (defaults to 6 s) and explicit filtering of holiday specials (Ghost, Pumpkin) to prevent unwanted chains.",
+    "FIX: `_auto_register_assets` now ensures `_gift_mapping` is loaded before use, eliminating silent failures when giftMapping wasn’t initialized.",
+    // INT-series improvements
+    "NEW: INT-series injection only resets on the final step (::#N), avoiding redundant resets during the chain.",
+    // Avatar change handling
+    "FIX: Robust avatar JSON path resolution in `_on_avatar_change` — handles both legacy string entries and new-style dicts without KeyError.",
+    // Pishock WebSocket stability
+    "FIX: `send_shock_ws` now pauses all non-PUBLISH operations during a PUBLISH to avoid being flagged as malicious by the PiShock broker.",
+    "FIX: Heartbeat task cancellation and reconnect back-off refined to prevent overlapping tasks and spurious disconnections.",
+    // UI & theming
+    "UI: Gift-chain buttons now correctly display the 🎁 icon, coinCost badge, and icon image from giftMapping.",
+    "UI: Chain play buttons updated to use the new `ChainPlay.TButton` style for consistent theming.",
+    // Miscellaneous
+    "SEC: Hardened `_auto_register_assets` so that only newly added chains are persisted to disk, avoiding accidental overwrites."
+  ],
+  "4.5.2": [
+    "NEW: One-shot save-guard → creates timestamped backups, refuses empty / smaller lists silently, and logs at most once (no spam).",
+    "FIX: AttributeErrors on capture-timeout (_finalize_capture / _save_avatar_snapshot) resolved — timers now target valid methods.",
+    "NEW: Debounced /avatar/change (1 s) + rolling-buffer pre-fill; capture finalises idempotently and marks avatar ready.",
+    "NEW: Burst-safe OSC sender — repeated hits refresh the same reset timer, so chat-spam maps cleanly in-game; INT-series unchanged.",
+    "FIX: ‘after_id’ UnboundLocalError squashed when multiple INT-series parameters fire in quick succession.",
+    "API: /api/features/actions/exec fully rewritten — always returns HTTP 200 with {\"data\":[]}, honours both \"context\" & legacy \"data\", sets CORS, and queues work on the Tk thread when alive.",
+    "API: Internal callback errors are logged but never bubble up, eliminating TikFinity’s 500-error flood and queue bloat.",
+    "UI: Guard / API errors now emit a single, colour-coded log-line per incident instead of endless repeats.",
+    "SEC: Flask handler no longer returns (Response,int) tuple — fixes NameError and adheres to WSGI expectations."
+  ],
+  "4.5.1": [
+    "NEW: Drop-in PiShock-v2 connector built around the official broker spec (PUBLISH / SUBSCRIBE) — no legacy code paths.",
+    "NEW: Automatic 25-second heartbeat (PING) keeps the WS session alive through broker idle-timeouts.",
+    "NEW: Self-healing reconnect loop with exponential back-off-+-random-jitter (5-→-60-s).",
+    "NEW: Graceful downgrade to *-log-only channels when Redis ping fan-out fails, so logs still stream while ops queue recovers.",
+    "FIX: PUBLISH payload now mirrors the NodeJS reference exactly (nested list removed, integers not strings).",
+    "NEW: Device discovery writes a de-duplicated list to saved/config/devices/devices.json and re-uses it on startup.",
+    "FIX: Pathing re-wired to global constants (USER_CFG_FILE, PISHOCK_DEVICE_FILE, etc.) eliminating hard-coded strings.",
+    "UI: Live PiShock event log shows success / error feedback with timestamps and coloured badges.",
+    "INT: Queue heartbeat to GUI thread (‘connected’ / ‘disconnected’) so status LED never desynchronises.",
+    "API: TLS context enforced on websockets.connect → prevents MITM/downgrade attacks and meets PiShock security guidance."
+  ],
+  "4.0.0": [
+    "NEW: Event dispatch queue for TikFinity to decouple UI thread logic",
+    "NEW: Priority queue for gift chain execution (via `priority` field)",
+    "NEW: Fuzzy gift matching and preview icons via AutoCompleteCombobox",
+    "NEW: Added New UI Element Called Changelog, this reads this very text!",
+    "FIX: Accurate \"Connected\" event status for TikFinity socket (q.put fixed)",
+    "NEW: TikFinity gift handler merged with OSC chain trigger",
+    "FIX: Gift chain buttons now render properly in UI",
+    "UI: Added changelog window with scrollback",
+    "INT: Code Cleanup performed to reduce load and stress on app",
+    "API: New Dedicated Listeners for Tikfinity Events"
+  ],
+  "3.8.5": [
+    "FIX: Prevented creation of empty chains (blank name or no steps)",
+    "FIX: Avoid UnboundLocalError in `_register_chain` for \"random\" trigger",
+    "FIX: Enforced `::#` integer cast logic during OSC dispatch",
+    "FIX: Respects `random` mode when executing chain (now shuffles properly)",
+    "FIX: Ensures `random` is registered with correct delay_min/delay_max logic",
+    "INT: `random` module import added to prevent crash on shuffle",
+    "LOG: Enhanced debug output for chain execution paths"
+  ],
+  "3.8.2": [
+    "FIX: Deferred TikFinity re-register now waits for avatar load completion",
+    "FIX: Added missing _save_avatar_capture_log() method to prevent crash",
+    "FIX: Prevent duplicate or premature TikFinity action executions",
+    "INT: Internal _avatar_ready flag and queue event now synced reliably",
+    "INT: Radial layout regeneration logic improved with stable path hashing",
+    "LOG: TikFinity action registration now confirmed with console prints"
+  ],
+  "3.8.1": [
+    "FIX: Layouts now correctly saved to controls_<avatar_id>.json",
+    "FIX: Ensures self.avatar_id and config stay in sync during save/load",
+    "FIX: Auto-load of saved layouts now restores INT-series rows reliably",
+    "FIX: Logging added to confirm saved/loaded control file paths",
+    "FIX: WebSocket event logging hardened for unknown TikFinity event types",
+    "INT: Improved TikFinity registration logic: unique actions, grouped UI",
+    "INT: Row builder assigns full address for action IDs to preserve uniqueness"
+  ],
+  "3.8.0": [
+    "INT: Live parameter capture now auto-triggers on avatar change",
+    "ADD: Per-avatar snapshot (<id>.json) and current pointer file added",
+    "ADD: Radial support: radials/controls_<id>.json with hash detection",
+    "ADD: Chains can now load per avatar and execute in serial mode",
+    "FIX: UI crash on missing config folders",
+    "FIX: Avatar change no longer causes double-loading or layout overwrite",
+    "FIX: VRChat’s noisy parameters (Voice, VRMode, etc.) now ignored on capture",
+    "UIX: Improved OSC status & avatar load feedback in status bar"
+  ],
+  "3.7.0": [
+    "Avatar JSON auto-load now re-generates radial layout correctly",
+    "INT-series parameters now reset using correct base OSC address",
+    "Timer reset logic now respects INT-series row mapping",
+    "TikFinity gift actions no longer register twice on reload",
+    "Robust fallback if avatar JSON has missing or invalid ID",
+    "Auto-loaded avatars now correctly trigger snapshot + radial logic",
+    "Graceful handling of broken or missing radial layout files",
+    "WebSocket reconnect stability improved (TikFinity + gift server)",
+    "UI layout behavior in dark mode refined (hover, scrollbar, combobox)",
+    "FIX: Processes now terminate correctly when closing the client",
+    "FIX: INT Series delete button no longer deletes chains",
+    "NEW: Autodetection + avatar prompt for unknown avatar imports",
+    "NEW: Simplified tutorial and onboarding steps",
+    "INT: Radial layout deduplication with hash prefilter"
+  ],
+  "3.6.2.1": [
+    "FIX: TikFinity new chains not registering"
+  ],
+  "3.6.1": [
+    "FIX: Critical thread allocation issue fixed",
+    "FIX: Offline chain button logic corrected"
+  ],
+  "3.6.0": [
+    "NEW: Priority system for chains (lower = sooner)",
+    "NEW: Easy Mode radial editor (UI shell only)",
+    "NEW: Gift trigger WebSocket listener (local)",
+    "NEW: Coin count based gift threshold triggers",
+    "NEW: Radial menu auto-generation from avatar JSON",
+    "NEW: Auto-load last used avatar snapshot",
+    "NEW: Avatar snapshot and layout save/load support",
+    "NEW: Gift image and coin cost in UI (via TikTok CDN)",
+    "NEW: /saved/ storage for all user data",
+    "FIX: Dark theme hover highlight improved",
+    "FIX: Duplicate TikFinity action registration blocked",
+    "FIX: Graceful handling of broken giftMapping.json",
+    "FIX: Chain delay/step spacing bug fixed",
+    "FIX: Capture logs can now be saved pre/post avatar change",
+    "NEW: Unified control UI with trigger mode support"
+  ]
+}
