@@ -1,20 +1,24 @@
 {
+  "4.8.5": [
+    "NEW: Added PiShock Connection Warning for when PiShock servers encounter service issues.",
+    "NEW: Added PiShock Connection Warning for user hubs failing to connect to their registered devices.",
+    "NEW: Added 'Contact Support' button to PiShock error dialog, which opens the official PiShock Discord in the browser.",
+    "FIX: Fixed auto-registration of Hyroe's INT/gift assets — issue identified by YoteTheCoyote; resolved via robust file creation logic.",
+    "FIX: Ensured control and chain files are pre-created and saved under /saved/<folder> before attempting auto-registration.",
+    "INTERNAL: Added non-interactive create_int_series_rows() helper to bypass GUI prompts and match manual INT injection.",
+    "INTERNAL: Refactored _auto_register_assets() to use real control creation logic instead of synthetic fallback.",
+    "INTERNAL: Version bumped to 4.8.5"
+  ],
   "4.8.0": [
-    // Auto-registration & gift mapping
     "NEW: Fuzzy name matching for Hyroe gift auto-registration — mismatched casing or slight variations now resolve to the correct giftMapping entry, so icons and coinCosts display properly.",
     "NEW: Fallback delays for unspecified gifts in HYROE_GIFTS (defaults to 6 s) and explicit filtering of holiday specials (Ghost, Pumpkin) to prevent unwanted chains.",
     "FIX: `_auto_register_assets` now ensures `_gift_mapping` is loaded before use, eliminating silent failures when giftMapping wasn’t initialized.",
-    // INT-series improvements
     "NEW: INT-series injection only resets on the final step (::#N), avoiding redundant resets during the chain.",
-    // Avatar change handling
     "FIX: Robust avatar JSON path resolution in `_on_avatar_change` — handles both legacy string entries and new-style dicts without KeyError.",
-    // Pishock WebSocket stability
     "FIX: `send_shock_ws` now pauses all non-PUBLISH operations during a PUBLISH to avoid being flagged as malicious by the PiShock broker.",
     "FIX: Heartbeat task cancellation and reconnect back-off refined to prevent overlapping tasks and spurious disconnections.",
-    // UI & theming
     "UI: Gift-chain buttons now correctly display the 🎁 icon, coinCost badge, and icon image from giftMapping.",
     "UI: Chain play buttons updated to use the new `ChainPlay.TButton` style for consistent theming.",
-    // Miscellaneous
     "SEC: Hardened `_auto_register_assets` so that only newly added chains are persisted to disk, avoiding accidental overwrites."
   ],
   "4.5.2": [
