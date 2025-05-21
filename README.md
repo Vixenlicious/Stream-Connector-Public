@@ -1,3 +1,21 @@
+# FILE STRUCTURE
+- /Stream Connector Beta/
+|-- /saved/
+|-- /saved/changelogs
+|-- /saved/changelogs/version.json
+|-- /saved/config/
+|-- /saved/config/devices/
+|-- /saved/config/filters/
+|-- /saved/config/filters/noisy_parameters.json
+|-- /saved/config/userdata/
+|-- /saved/config/userdata/license.json <-- Created on first launch
+|-- /saved/controls/
+|-- /saved/controls/backup
+|-- /saved/radials/ <-- future feature
+|-- /saved/giftMapping.json <--- required for chains to load images and values for gift mapping keys
+|-- Stream Connector.exe
+
+
 # Stream Connector
 
 ### 🔗 The Ultimate Python Client for TikFinity, TikTok, VRChat, and Streaming Interactivity
