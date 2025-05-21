@@ -1,19 +1,20 @@
 # FILE STRUCTURE
 Stream Connector Beta/
-├── saved/												# Root Storage Folder for all files
-│   ├── changelogs/								# Storage location for Changelogs
-│   │   └── version.json					# Changelog File for program to read on button click
-│   ├── config/										# Configuration Storage Location
-│   │   ├── devices/							# PiShock Device Information Storage
-│   │   ├── filters/							# Storage location for logging window filter suppressor
-│   │   │   └── noisy_parameters.json		# Modifiable by user to reduce spam in the log window
-│   │   └── userdata/							# Storage location for license data
-│   │       └── license.json      # Created on first launch
-│   ├── controls/									# Control Files
-│   │   └── backup/								# Automatic Backups
-│   ├── radials/                  # Future feature
-│   └── giftMapping.json          # Required for chains to load images/values
-└── Stream Connector.exe
+├── saved/                         # Root storage folder for all files
+│   ├── changelogs/                # Storage location for changelogs
+│   │   └── version.json           # Changelog file for program to read on button click
+│   ├── config/                    # Configuration storage location
+│   │   ├── devices/               # PiShock device information storage
+│   │   ├── filters/               # Logging-window filter suppressor
+│   │   │   └── noisy_parameters.json  # Modifiable by user to reduce spam in log window
+│   │   └── userdata/              # Storage location for license data
+│   │       └── license.json       # Created on first launch
+│   ├── controls/                  # Control files
+│   │   └── backup/                # Automatic backups
+│   ├── radials/                   # Future feature
+│   └── giftMapping.json           # Required for chains to load images/values
+└── Stream Connector.exe           # Compiled executable
+
 
 # Stream Connector
 
