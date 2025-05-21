@@ -1,19 +1,28 @@
-# FILE STRUCTURE
-Stream Connector Beta/
-├── saved/                         # Root storage folder for all files
-│   ├── changelogs/                # Storage location for changelogs
-│   │   └── version.json           # Changelog file for program to read on button click
-│   ├── config/                    # Configuration storage location
-│   │   ├── devices/               # PiShock device information storage
-│   │   ├── filters/               # Logging-window filter suppressor
-│   │   │   └── noisy_parameters.json  # Modifiable by user to reduce spam in log window
-│   │   └── userdata/              # Storage location for license data
-│   │       └── license.json       # Created on first launch
-│   ├── controls/                  # Control files
-│   │   └── backup/                # Automatic backups
-│   ├── radials/                   # Future feature
-│   └── giftMapping.json           # Required for chains to load images/values
-└── Stream Connector.exe           # Compiled executable
+## 📁 File Structure
+
+**Stream Connector Beta/**
+- **saved/** – Root storage folder for all files  
+  - **changelogs/** – Storage location for changelogs  
+    - `version.json` – Changelog file for program to read on button click  
+  - **config/** – Configuration storage location  
+    - **devices/** – PiShock device information storage  
+    - **filters/** – Logging-window filter suppressor  
+      - `noisy_parameters.json` – Modifiable by user to reduce spam in log window  
+    - **userdata/** – Storage location for license data  
+      - `license.json` – Created on first launch  
+  - **controls/** – Control files  
+    - **backup/** – Automatic backups  
+  - **radials/** – Future feature  
+  - `giftMapping.json` – Required for chains to load images/values  
+- `Stream Connector.exe` – Compiled executable  
+
+### 📌 Notes
+
+- `saved/` acts as the central repository for application data, configuration, logs, and backups.
+- `config/` holds all device, license, and filter configuration.
+- `giftMapping.json` is required for dynamic visual or data-based chain operations.
+- `radials/` is reserved for future features and may be empty currently.
+
 
 
 # Stream Connector
