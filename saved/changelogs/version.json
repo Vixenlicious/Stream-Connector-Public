@@ -1,4 +1,17 @@
 {
+	"5.2.2": [
+		"NEW: Added 'Special' mode to the toolbar dropdown with dedicated buttons for 'Changelog' and '💖 Support Me'.",
+		"NEW: Introduced LICENSE_TIER global parsed from Gumroad 'variants' (Bronze, Silver, Gold).",
+		"NEW: Personalized license popup messages based on supporter tier with emojis and custom text.",
+		"NEW: LICENSE_TIER now drives all license messaging instead of LICENSE_TYPE.",
+		"NEW: Display tier-specific thank-you messages for Gold, Silver, and Bronze supporters.",
+		"NEW: Added license.json first-run fallback with auto-write of free license key.",
+		"NEW: Implemented is_running() method in PiShockClient to prevent duplicate thread starts.",
+		"FIX: Resolved incorrect tkinter popup showing 'Free License' despite valid supporter license due to missing global LICENSE_TIER.",
+		"FIX: Ensured external browser is always used for 'Support Me' link using webbrowser.open_new().",
+		"FIX: Removed legacy Support button from right_tools once migrated to the 'Special' toolbar.",
+		"INTERNAL: Minor UI cleanup and positioning adjustments in render_toolbar_buttons()."
+	],
   "5.2.0": [
     "NEW: Deferred TikFinity action registration until after UI and OSC initialization using the _ready flag and finalize_controls().",
     "NEW: Deferred TikFinity registry cache reads and writes until after OSC parameters are loaded via load_registry_cache() and save_registry_cache().",

@@ -3,7 +3,9 @@
     "/avatar/parameters/Upright",
     "/avatar/parameters/AngularY",
     "/avatar/parameters/VRMode",
-    "/avatar/parameters/Voice"
+    "/avatar/parameters/Voice",
+	"/avatar/parameters/FluffSquishUpper",
+	"/avatar/parameters/VF56_SyncPointer"
   ],
   "noisy_prefixes": [
     "v2/Eye",
