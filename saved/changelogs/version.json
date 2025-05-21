@@ -1,4 +1,16 @@
 {
+  "5.2.0": [
+    "NEW: Deferred TikFinity action registration until after UI and OSC initialization using the _ready flag and finalize_controls().",
+    "NEW: Deferred TikFinity registry cache reads and writes until after OSC parameters are loaded via load_registry_cache() and save_registry_cache().",
+    "NEW: Added re_register_all_tikfinity_actions() helper to hot-reload TikFinity actions and prevent duplicate registrations.",
+    "NEW: Integrated Gumroad license verification with GUMROAD_VERIFY_URL, SUPPORTER_PRODUCT_ID, and FREE_POPUP_URL constants.",
+    "NEW: Implemented _check_license_valid() to validate license key (read from /saved/config/user.json) against Gumroad’s API using requests.",
+    "NEW: On startup, display a “Free Version” popup when no valid license is found, featuring “Buy Supporter License” and “Continue (Free)” options.",
+    "NEW: Extended edit_config() to include a License Key field, persisting it alongside TikTok and PiShock settings.",
+    "FIX: Eliminated premature register_action() calls and config persistence by deferring both until after full initialization.",
+    "INTERNAL: Adjusted edit_config() window layout to accommodate the new License Key entry.",
+    "INTERNAL: Version bumped to 5.2.0"
+  ],
   "5.0.0": [
     "FIX: VRChat collision issue with VRCFacetracking resolved to ensure proper parameter syncing.",
     "FIX: Migrated to a faster VRC parameter system for improved runtime performance.",

@@ -1,0 +1,23 @@
+{
+  "noisy_exact": [
+    "/avatar/parameters/Upright",
+    "/avatar/parameters/AngularY",
+    "/avatar/parameters/VRMode",
+    "/avatar/parameters/Voice"
+  ],
+  "noisy_prefixes": [
+    "v2/Eye",
+    "v2/EyeLid",
+    "v2/Pupil",
+    "v2/Brow",
+    "v2/Nose",
+    "v2/Cheek",
+    "v2/Jaw",
+    "v2/Lip",
+    "v2/Mouth",
+    "v2/Tongue",
+    "EyeTrackingActive",
+    "ExpressionTrackingActive",
+    "LipTrackingActive"
+  ]
+}
