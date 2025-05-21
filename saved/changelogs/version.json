@@ -1,13 +1,19 @@
 {
-  "4.8.5": [
-    "NEW: Added PiShock Connection Warning for when PiShock servers encounter service issues.",
-    "NEW: Added PiShock Connection Warning for user hubs failing to connect to their registered devices.",
-    "NEW: Added 'Contact Support' button to PiShock error dialog, which opens the official PiShock Discord in the browser.",
-    "FIX: Fixed auto-registration of Hyroe's INT/gift assets — issue identified by YoteTheCoyote; resolved via robust file creation logic.",
-    "FIX: Ensured control and chain files are pre-created and saved under /saved/<folder> before attempting auto-registration.",
-    "INTERNAL: Added non-interactive create_int_series_rows() helper to bypass GUI prompts and match manual INT injection.",
-    "INTERNAL: Refactored _auto_register_assets() to use real control creation logic instead of synthetic fallback.",
-    "INTERNAL: Version bumped to 4.8.5"
+  "5.0.0": [
+    "FIX: VRChat collision issue with VRCFacetracking resolved to ensure proper parameter syncing.",
+    "FIX: Migrated to a faster VRC parameter system for improved runtime performance.",
+    "START: Building installer package for streamlined update deployment.",
+    "FIX: Core logic for seeding default files and configs corrected for stability on first run.",
+    "FIX: Addressed lockup and client crash during avatar change triggered by OSC update race condition.",
+    "FIX: Core logic for Hyroe gift + Fooma Twitch integration now ensures proper detection and event registration.",
+    "MIGRATED: Core logic and save operations now leverage VRC OSC Query interface for lower-latency interactions.",
+    "MIGRATED: OSC logic now powered by an internal API layer for faster parsing and cleaner abstraction.",
+    "MIGRATED: GUI logic improved for better async handling, faster redraws, and responsive OSC query results.",
+    "MIGRATED: Save/load pipelines now operate on optimized internal data structures to cut down disk I/O.",
+    "MIGRATED: Controls logic now uses unified internal sync model with the OSC bridge for stability.",
+    "INVESTIGATED: Avatar parameter change detected in OSC Debug but not firing in-game. Root cause: VRChat bug. Workaround: avatar must be favorited to consistently trigger updates.",
+    "FIX: Queue freeze resolved by replacing incorrect return in pump_q loop with continue, ensuring proper message handling.",
+    "OPTIMIZED: Registry cache now writes only on content changes, preventing unnecessary disk I/O at startup."
   ],
   "4.8.0": [
     "NEW: Fuzzy name matching for Hyroe gift auto-registration — mismatched casing or slight variations now resolve to the correct giftMapping entry, so icons and coinCosts display properly.",
