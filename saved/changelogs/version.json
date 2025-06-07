@@ -1,4 +1,27 @@
 {
+	"5.4.5": [
+		"HOTFIX: Gui dispatcher for new row filtering with heavy avatars."
+	],
+	"5.4.4": [
+		"NEW: Nuclear OSC filtering system implemented for tracking data suppression.",
+		"NEW: Fuzzy suffix blocklist added to silently reject invasive OSC suffixes.",
+		"IMPROVED: Legacy noisy filter system now loads alongside nuclear filters for layered OSC handling.",
+		"INTERNAL: Controls parser now de-dupes noisy parameters against enforced blocklists.",
+		"INTERNAL: Added hard filter layer for known tracking prefixes and motion parameters."
+	],
+	"5.4.3": [
+		"FIX: Avatar Controls sometimes not firing correctly.",
+		"FIX: TikFinity desync on new avatar imports or loading unregistered avatars.",
+		"FIX: Chain registry conflicts when gift-triggered chains re-import improperly.",
+		"NEW: Added Chain Controls dropdown to toolbar.",
+		"NEW: Added Export and Import Chains buttons under Chain Controls.",
+		"NEW: DRM License Check integrated (supports licensed and premium tiers).",
+		"IMPROVED: load_avatar_from_path now purges and reloads saved controls before re-rendering UI.",
+		"IMPROVED: Registry I/O and TikFinity integration now sync actions and categories cleanly after avatar load.",
+		"REMOVED: OneDrive placeholder pinning logic (was unstable on non-standard drives).",
+		"NEW: Export directory created at saved/controls/export/ during startup seeding.",
+		"INTERNAL: Restructured TikFinity API boot logic for stronger cache validation and recovery after state loss."
+	],
 	"5.4.2": [
 		"FIX: Avatar loader now always saves last_avatar.txt properly after a successful import.",
 		"FIX: Controls JSON is now rewritten after load to preserve a hard backup, even if unchanged.",
