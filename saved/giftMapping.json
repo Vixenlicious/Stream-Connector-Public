@@ -2,7 +2,6 @@
   {
     "name": "Ice Cream Cone",
     "coins": 1,
-    "moneyCost": 0.01,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/968820bc85e274713c795a6aef3f7c67~tplv-obj.webp"
   },
   {
@@ -14,7 +13,6 @@
   {
     "name": "TikTok",
     "coins": 1,
-    "moneyCost": 0.01,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/802a21ae29f9fae5abe3693de9f874bd~tplv-obj.webp"
   },
   {
@@ -25,9 +23,8 @@
   },
   {
     "name": "Heart",
-    "coins": 1,
-    "moneyCost": 0.01,
-    "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/dd300fd35a757d751301fba862a258f1~tplv-obj.webp"
+    "coins": 200,
+    "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/16f6adfae88db463811560da9f9438f8~tplv-obj.webp"
   },
   {
     "name": "Cake Slice",
@@ -92,7 +89,6 @@
   {
     "name": "Finger Heart",
     "coins": 5,
-    "moneyCost": 0.05,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/a4c4dc437fd3a6632aba149769491f49.png~tplv-obj.webp"
   },
   {
@@ -128,13 +124,11 @@
   {
     "name": "Friendship Necklace",
     "coins": 10,
-    "moneyCost": 0.1,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/e033c3f28632e233bebac1668ff66a2f.png~tplv-obj.webp"
   },
   {
     "name": "Rosa",
     "coins": 10,
-    "moneyCost": 0.1,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp"
   },
   {
@@ -158,7 +152,6 @@
   {
     "name": "Tiny Diny",
     "coins": 10,
-    "moneyCost": 0.1,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/3851a489dea62b3a9fe99f61de5470ae~tplv-obj.webp"
   },
   {
@@ -182,7 +175,6 @@
   {
     "name": "Perfume",
     "coins": 20,
-    "moneyCost": 0.2,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/20b8f61246c7b6032777bb81bf4ee055~tplv-obj.webp"
   },
   {
@@ -224,7 +216,6 @@
   {
     "name": "Paper Crane",
     "coins": 99,
-    "moneyCost": 0.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/0f158a08f7886189cdabf496e8a07c21~tplv-obj.webp"
   },
   {
@@ -296,7 +287,6 @@
   {
     "name": "Confetti",
     "coins": 100,
-    "moneyCost": 1.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/cb4e11b3834e149f08e1cdcc93870b26~tplv-obj.webp"
   },
   {
@@ -386,13 +376,11 @@
   {
     "name": "Potato in Paris",
     "coins": 199,
-    "moneyCost": 1.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/0ac3b58039881ac97bd79423121f0d27.png~tplv-obj.webp"
   },
   {
     "name": "Boxing Gloves",
     "coins": 299,
-    "moneyCost": 2.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/9f8bd92363c400c284179f6719b6ba9c~tplv-obj.webp"
   },
   {
@@ -404,7 +392,6 @@
   {
     "name": "Corgi",
     "coins": 299,
-    "moneyCost": 2.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/148eef0884fdb12058d1c6897d1e02b9~tplv-obj.webp"
   },
   {
@@ -434,7 +421,6 @@
   {
     "name": "Fruit Friends",
     "coins": 299,
-    "moneyCost": 2.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/1153dd51308c556cb4fcc48c7d62209f.png~tplv-obj.webp"
   },
   {
@@ -476,7 +462,6 @@
   {
     "name": "Forever Rosa",
     "coins": 399,
-    "moneyCost": 3.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/863e7947bc793f694acbe970d70440a1.png~tplv-obj.webp"
   },
   {
@@ -518,7 +503,6 @@
   {
     "name": "Coral",
     "coins": 499,
-    "moneyCost": 4.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/d4faa402c32bf4f92bee654b2663d9f1~tplv-obj.webp"
   },
   {
@@ -530,7 +514,6 @@
   {
     "name": "Motorcycle",
     "coins": 2988,
-    "moneyCost": 29.88,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/6517b8f2f76dc75ff0f4f73107f8780e~tplv-obj.webp"
   },
   {
@@ -540,7 +523,7 @@
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/e0589e95a2b41970f0f30f6202f5fce6~tplv-obj.webp"
   },
   {
-    "name": "Lion\u2019s Mane",
+    "name": "Lion’s Mane",
     "coins": 500,
     "moneyCost": 4.54,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/44818035acbbe673514caa600755268c~tplv-obj.webp"
@@ -560,7 +543,6 @@
   {
     "name": "Manifesting",
     "coins": 500,
-    "moneyCost": 5.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/ca11566ae5a41ec8971cc00b51f78dac.png~tplv-obj.webp"
   },
   {
@@ -570,9 +552,8 @@
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/69d88771aca90ce72b29c5ae6c4acb96.png~tplv-obj.webp"
   },
   {
-    "name": "You\u2019re Amazing",
+    "name": "You’re Amazing",
     "coins": 500,
-    "moneyCost": 5.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/b48c69f4df49c28391bcc069bbc31b41.png~tplv-obj.webp"
   },
   {
@@ -596,7 +577,6 @@
   {
     "name": "Swan",
     "coins": 699,
-    "moneyCost": 6.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/97a26919dbf6afe262c97e22a83f4bf1~tplv-obj.webp"
   },
   {
@@ -608,7 +588,6 @@
   {
     "name": "Train",
     "coins": 899,
-    "moneyCost": 8.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/4227ed71f2c494b554f9cbe2147d4899~tplv-obj.webp"
   },
   {
@@ -656,7 +635,6 @@
   {
     "name": "Watermelon Love",
     "coins": 1000,
-    "moneyCost": 10.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/1d1650cd9bb0e39d72a6e759525ffe59~tplv-obj.webp"
   },
   {
@@ -680,7 +658,6 @@
   {
     "name": "Blooming Ribbons",
     "coins": 1000,
-    "moneyCost": 10.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/f76750ab58ee30fc022c9e4e11d25c9d.png~tplv-obj.webp"
   },
   {
@@ -710,13 +687,11 @@
   {
     "name": "Dinosaur",
     "coins": 1000,
-    "moneyCost": 10.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/e1b0687ef6df9d6db8222831d353fcf9.png~tplv-obj.webp"
   },
   {
     "name": "Fireworks",
     "coins": 1088,
-    "moneyCost": 10.88,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/9494c8a0bc5c03521ef65368e59cc2b8~tplv-obj.webp"
   },
   {
@@ -758,7 +733,6 @@
   {
     "name": "Chasing the Dream",
     "coins": 1500,
-    "moneyCost": 15.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/1ea8dbb805466c4ced19f29e9590040f~tplv-obj.webp"
   },
   {
@@ -768,7 +742,7 @@
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/f8a207305960ecdb4756de9818e0b2b2.png~tplv-obj.webp"
   },
   {
-    "name": "Lover\u2019s Lock",
+    "name": "Lover’s Lock",
     "coins": 1500,
     "moneyCost": 20.38,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/f3010d1fcb008ce1b17248e5ea18b178.png~tplv-obj.webp"
@@ -848,7 +822,6 @@
   {
     "name": "Cooper Flies Home",
     "coins": 1999,
-    "moneyCost": 19.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/3f1945b0d96e665a759f747e5e0cf7a9~tplv-obj.webp"
   },
   {
@@ -908,7 +881,6 @@
   {
     "name": "Meteor Shower",
     "coins": 3000,
-    "moneyCost": 30.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/71883933511237f7eaa1bf8cd12ed575~tplv-obj.webp"
   },
   {
@@ -968,7 +940,6 @@
   {
     "name": "Private Jet",
     "coins": 4888,
-    "moneyCost": 48.88,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/921c6084acaa2339792052058cbd3fd3~tplv-obj.webp"
   },
   {
@@ -1022,7 +993,6 @@
   {
     "name": "Flying Jets",
     "coins": 5000,
-    "moneyCost": 50.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/1d067d13988e8754ed6adbebd89b9ee8.png~tplv-obj.webp"
   },
   {
@@ -1076,7 +1046,6 @@
   {
     "name": "Sports Car",
     "coins": 7000,
-    "moneyCost": 70.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/e7ce188da898772f18aaffe49a7bd7db~tplv-obj.webp"
   },
   {
@@ -1118,13 +1087,11 @@
   {
     "name": "Interstellar",
     "coins": 10000,
-    "moneyCost": 100.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/8520d47b59c202a4534c1560a355ae06~tplv-obj.webp"
   },
   {
     "name": "Sunset Speedway",
     "coins": 10000,
-    "moneyCost": 100.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/df63eee488dc0994f6f5cb2e65f2ae49~tplv-obj.webp"
   },
   {
@@ -1170,7 +1137,7 @@
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/c95edc806c020e614635ba1ae1c837fa.png~tplv-obj.webp"
   },
   {
-    "name": "Pirate\u2019s Ship",
+    "name": "Pirate’s Ship",
     "coins": 15000,
     "moneyCost": 196.5,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/fe5a54fafb734cf2b41cfd65c6174d48~tplv-obj.webp"
@@ -1244,7 +1211,6 @@
   {
     "name": "TikTok Shuttle",
     "coins": 20000,
-    "moneyCost": 200.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/8ef48feba8dd293a75ae9d4376fb17c9~tplv-obj.webp"
   },
   {
@@ -1286,11 +1252,10 @@
   {
     "name": "Phoenix",
     "coins": 25999,
-    "moneyCost": 259.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/ef248375c4167d70c1642731c732c982~tplv-obj.webp"
   },
   {
-    "name": "Adam\u2019s Dream",
+    "name": "Adam’s Dream",
     "coins": 25999,
     "moneyCost": 357.62,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/9a586391fbb1e21621c4203e5563a9e0~tplv-obj.webp"
@@ -1394,7 +1359,6 @@
   {
     "name": "Future Encounter",
     "coins": 1500,
-    "moneyCost": 15.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/af980f4ec9ed73f3229df8dfb583abe6.png~tplv-obj.webp"
   },
   {
@@ -1484,7 +1448,6 @@
   {
     "name": "Hand Hearts",
     "coins": 100,
-    "moneyCost": 1.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/6cd022271dc4669d182cad856384870f~tplv-obj.webp"
   },
   {
@@ -1496,7 +1459,6 @@
   {
     "name": "Under Control",
     "coins": 1500,
-    "moneyCost": 15.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/af67b28480c552fd8e8c0ae088d07a1d.png~tplv-obj.webp"
   },
   {
@@ -1520,7 +1482,6 @@
   {
     "name": "Gold Medal",
     "coins": 200,
-    "moneyCost": 2.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/21549ba24f76a01d00373cb8e35660ae.png~tplv-obj.webp"
   },
   {
@@ -1532,7 +1493,6 @@
   {
     "name": "Hanging Lights",
     "coins": 199,
-    "moneyCost": 1.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/183225b378b1bdf758a992781727b850~tplv-obj.webp"
   },
   {
@@ -1562,7 +1522,6 @@
   {
     "name": "Rosie the Rose Bean",
     "coins": 399,
-    "moneyCost": 3.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/3cbaea405cc61e8eaab6f5a14d127511.png~tplv-obj.webp"
   },
   {
@@ -1580,7 +1539,6 @@
   {
     "name": "Sage the Smart Bean",
     "coins": 399,
-    "moneyCost": 3.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/ed2cc456ab1a8619c5093eb8cfd3d303.png~tplv-obj.webp"
   },
   {
@@ -1592,13 +1550,11 @@
   {
     "name": "Rocky the Rock Bean",
     "coins": 399,
-    "moneyCost": 3.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/767d7ea90f58f3676bbc5b1ae3c9851d.png~tplv-obj.webp"
   },
   {
     "name": "Jollie the Joy Bean",
     "coins": 399,
-    "moneyCost": 3.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/0e3769575f5b7b27b67c6330376961a4.png~tplv-obj.webp"
   },
   {
@@ -1610,13 +1566,11 @@
   {
     "name": "Gamer 2025",
     "coins": 299,
-    "moneyCost": 2.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/91058c626f0809291e7941969e4f0d05.png~tplv-obj.webp"
   },
   {
     "name": "Super GG",
     "coins": 100,
-    "moneyCost": 1.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/cbd7588c53ec3df1af0ed6d041566362.png~tplv-obj.webp"
   },
   {
@@ -1634,13 +1588,11 @@
   {
     "name": "Love you so much",
     "coins": 1,
-    "moneyCost": 0.01,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/fc549cf1bc61f9c8a1c97ebab68dced7.png~tplv-obj.webp"
   },
   {
     "name": "You're awesome",
     "coins": 1,
-    "moneyCost": 0.01,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/e9cafce8279220ed26016a71076d6a8a.png~tplv-obj.webp"
   },
   {
@@ -1656,7 +1608,7 @@
     "image": ""
   },
   {
-    "name": "It\u2019s corn",
+    "name": "It’s corn",
     "coins": 1,
     "moneyCost": 0.01,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/37f5c76b65c17d6dbbbd4b6724f61bf2~tplv-obj.webp"
@@ -1694,7 +1646,6 @@
   {
     "name": "Sage's Slash",
     "coins": 399,
-    "moneyCost": 3.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/213605d4582aa3e35b51712c7a0909aa.png~tplv-obj.webp"
   },
   {
@@ -1718,61 +1669,51 @@
   {
     "name": "Space Jet",
     "coins": 9000,
-    "moneyCost": 90.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/f5ef982688fa92144a23cfc419b3ca21.png~tplv-obj.webp"
   },
   {
     "name": "Space Dog",
     "coins": 2500,
-    "moneyCost": 25.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/9154160eb6726193bc51f5007d5853fa.png~tplv-obj.webp"
   },
   {
     "name": "Space Cat",
     "coins": 1500,
-    "moneyCost": 15.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/a87fadcaa884d9d4191c7b68580eb08a.png~tplv-obj.webp"
   },
   {
     "name": "Space Carpool",
     "coins": 15000,
-    "moneyCost": 150.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/60141ccbd7990f6d6b7b202405ffbc84.png~tplv-obj.webp"
   },
   {
     "name": "Summer Sun",
     "coins": 20,
-    "moneyCost": 0.2,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/490c8a378e4d24abb9e8c69cb93827a6.png~tplv-obj.webp"
   },
   {
     "name": "Summer 2025",
     "coins": 1,
-    "moneyCost": 0.01,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/dbf7b507b8dd3de081cd1ff0e81c810e.png~tplv-obj.webp"
   },
   {
     "name": "Summer of LIVE",
     "coins": 500,
-    "moneyCost": 5.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/51c74e7b61cbdd9d42dabd779b8de16b.png~tplv-obj.webp"
   },
   {
     "name": "Rainbow Ministar",
     "coins": 100,
-    "moneyCost": 1.0,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/7f0f2e34134a1b151cd24c5702264f75.png~tplv-obj.webp"
   },
   {
     "name": "Gamebow",
     "coins": 299,
-    "moneyCost": 2.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/119f2635d46aafafcfef5506455d2122.png~tplv-obj.webp"
   },
   {
     "name": "Rainbow Superstar",
     "coins": 4088,
-    "moneyCost": 40.88,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/dd6721e25f4b0b5cd8293619efec92d3.png~tplv-obj.webp"
   },
   {
@@ -1808,13 +1749,41 @@
   {
     "name": "Sage's Coinbot",
     "coins": 2199,
-    "moneyCost": 21.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/443c163954f4f7636909fb6980518745.png~tplv-obj.webp"
   },
   {
     "name": "Jollie's Heartland",
     "coins": 2199,
-    "moneyCost": 21.99,
     "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/0eafd5c28cdb2563f3386679643abb29.png~tplv-obj.webp"
+  },
+  {
+    "name": "What's Up",
+    "coins": 1,
+    "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/6abbff6ede7bfde82feaa7daf62c3e51.png~tplv-obj.webp"
+  },
+  {
+    "name": "Shooting Stars",
+    "coins": 1580,
+    "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/b79f212fa1831d128ed9ae78538d9485.png~tplv-obj.webp"
+  },
+  {
+    "name": "Flowers",
+    "coins": 100,
+    "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/697bf9450c55c2ee569c8e8b2cab7152~tplv-obj.webp"
+  },
+  {
+    "name": "Im Just a Hamster",
+    "coins": 499,
+    "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/8a8ebe8ac243b381f9b515f7243f145b.png~tplv-obj.webp"
+  },
+  {
+    "name": "Balloons",
+    "coins": 200,
+    "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/49d51360108c4ff1770f2d7c59d7d7cb.png~tplv-obj.webp"
+  },
+  {
+    "name": "Ice skating",
+    "coins": 199,
+    "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/4c4372c224d316c957b854a071b2f408.png~tplv-obj.webp"
   }
 ]

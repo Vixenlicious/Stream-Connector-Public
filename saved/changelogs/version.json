@@ -1,4 +1,17 @@
 {
+	"5.5.0": [
+			"FEATURE: Added silver-tier exclusive Pishock Pattern Editor.",
+			"FEATURE: Added new 'pattern' PiShock mode with custom sequence editor.",
+			"FEATURE: Added bronze-tier exclusive modes: pulse, burst, oscillation, randomized_wobble.",
+			"INFO: If you bought Silver tier all modes are available as they scale.",
+			"UX: New GUI controls for all special PiShock modes with tooltips and gating per license tier.",
+			"FIX: Enforced minimum 1000ms duration for all special mode operations to avoid dropped packets.",
+			"FIX: Proper delay handling for randomized_wobble to ensure device receives all signals.",
+			"FIX: Pattern steps now validated to ensure minimum duration and delay values.",
+			"FIX: Patched more stray full body tracking OSC Parameters.",
+			"FIX: Patched Large Logs! Oops! Now cleanly nukes your logs and backs them up once a day! Thris greatly improves load performance.",
+			"IMPROVEMENT: Increased Max CPU Threads from 4 to 8 greatly improving runtime performance."
+	],
 	"5.4.5": [
 		"HOTFIX: Gui dispatcher for new row filtering with heavy avatars."
 	],
