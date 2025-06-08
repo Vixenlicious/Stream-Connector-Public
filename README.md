@@ -15,7 +15,6 @@
   - **radials/** – Reserved for future radial menu support  
   - `giftMapping.json` – Required for chain preview icons and values  
 - `Stream Connector.exe` – Compiled application binary  
-- `Stream Connector Dev.py` – Development script (if running from source)
 
 ---
 
