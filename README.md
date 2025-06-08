@@ -1,116 +1,110 @@
-## 📁 File Structure
+# 📁 File Structure
 
-**Stream Connector Beta/**
-- **saved/** – Root storage folder for all files  
-  - **changelogs/** – Storage location for changelogs  
-    - `version.json` – Changelog file for program to read on button click  
-  - **config/** – Configuration storage location  
-    - **devices/** – PiShock device information storage  
-    - **filters/** – Logging-window filter suppressor  
-      - `noisy_parameters.json` – Modifiable by user to reduce spam in log window  
-    - **userdata/** – Storage location for license data  
-      - `license.json` – Created on first launch  
-  - **controls/** – Control files  
-    - **backup/** – Automatic backups  
-  - **radials/** – Future feature  
-  - `giftMapping.json` – Required for chains to load images/values  
-- `Stream Connector.exe` – Compiled executable  
+**Stream Connector/**
+- **saved/** – Central storage for all app data  
+  - **changelogs/** – Markdown and JSON logs for UI release notes  
+    - `version.json` – Read at runtime for version change UI  
+  - **config/** – Main configuration directory  
+    - **devices/** – PiShock registered devices  
+    - **filters/** – Log filter profiles  
+      - `noisy_parameters.json` – User-tunable log filter  
+    - **userdata/** – License validation and tier info  
+      - `license.json` – Created/updated on launch  
+  - **controls/** – Stored control profiles  
+    - **backup/** – Auto-saved control backups  
+  - **radials/** – Reserved for future radial menu support  
+  - `giftMapping.json` – Required for chain preview icons and values  
+- `Stream Connector.exe` – Compiled application binary  
+- `Stream Connector Dev.py` – Development script (if running from source)
+
+---
 
 ### 📌 Notes
 
-- `saved/` acts as the central repository for application data, configuration, logs, and backups.
-- `config/` holds all device, license, and filter configuration.
-- `giftMapping.json` is required for dynamic visual or data-based chain operations.
-- `radials/` is reserved for future features and may be empty currently.
+- All persistent user data lives under `saved/` — including licenses, logs, and controls.
+- `license.json` now includes both primary DRM and supporter key fields.
+- `giftMapping.json` must be valid for chain UI previews to work properly.
+- `radials/` is a placeholder for upcoming radial dial/slider support.
 
-
+---
 
 # Stream Connector
 
-### 🔗 The Ultimate Python Client for TikFinity, TikTok, VRChat, and Streaming Interactivity
+### 🔗 The Ultimate Interactive Control Engine for TikFinity, TikTok, VRChat, and Shock Feedback
 
-Welcome to **Stream Connector**, a premium, closed-source application built for creators, VTubers, and streamers who want to bring **real-time reactivity** into their VRChat avatars and streaming setup.
+**Stream Connector** is a purpose-built, GUI-powered platform for streamers and avatar creators who demand full control over event responses, PiShock devices, and real-time avatar logic.
 
-From TikTok Live gifts to PiShock triggers, Stream Connector links everything with visual flair, powerful logic chains, and a beautiful glass-dark UI.
-
----
-
-## 🌟 Key Features
-
-- **TikTok Integration**
-  - React to follows, likes, comments, gifts, shares, and more.
-  - Use TikTok Live events to power real-time avatar responses.
-
-- **TikFinity Event Engine**
-  - Full API endpoint support for TikFinity actions and categories.
-  - Bind TikFinity gift or subscriber events to complex reaction chains.
-
-- **VRChat OSC Toolkit**
-  - Real-time avatar parameter control via OSC.
-  - Auto-detect and manage avatars, controls, and address states.
-
-- **Chain Reactions**
-  - Link multiple actions into logic sequences with delay, reset, and looping.
-  - Powerful GUI to create, edit, and debug multi-step reactions.
-
-- **PiShock API Support**
-  - WebSocket v2 client for shock, vibrate, and beep effects.
-  - Supports both owned and shared PiShock devices.
-
-- **Web Interface & API**
-  - Flask-powered API layer for integration with Twitch or Webhooks.
-  - Includes action registry, reloading, and diagnostics endpoints.
+Designed with creators in mind, it fuses modern Python capabilities, VRChat OSC, TikTok Live events, PiShock integration, and a powerful reactive chain engine.
 
 ---
 
-## 🌐 Connect With Us
+## 🌟 Features Summary
 
-Come be part of the creative and interactive community that powers Stream Connector:
+### 🎁 TikTok Live
+- Respond to likes, gifts, follows, subs, and comments.
+- Includes event chaining, intensity scaling, and manual triggers.
 
-- 💬 **Discord Community**  
-  [Join here →](https://discord.com/invite/6YCQG8N7fv)
+### 🧩 Chain Logic Engine
+- Build visual chain sequences with delay, timers, and mode mixing.
+- Chains support OSC, PiShock, custom events, and advanced fallback logic.
 
-- 📱 **TikTok**  
-  [Follow @vixenlicious →](https://www.tiktok.com/@vixenlicious)
+### 🧠 VRChat OSC
+- Automatically discovers avatar parameters from JSON + live cache.
+- Supports override patterns, forced resets, and untouchable address protection.
 
-- 🧠 **VRChat Group**  
-  [Join THEVIX Group →](https://vrc.group/THEVIX.5990)
+### ⚡ PiShock Support
+- Realtime WebSocket v2 support
+- Custom pattern modes (licensed only: Bronze+ required)
+- Owned/shared device logic
+
+### 🖥️ Flask API & Web Layer
+- Integrate with Twitch, Webhooks, or OBS via REST
+- Supports live reload, diagnostics, and OSC injection
+
+---
+
+## 🛡️ Licensing & Tiers
+
+- **DRM-Protected** (Gumroad licensing)
+- **Tiered Access**:
+  - Bronze+ → Advanced PiShock modes
+  - Silver+ → Pattern Editor
+  - Gold+ → Full feature unlock, early features, diagnostics
+
+License is verified and cached on launch. Fallbacks and UI behaviors depend on tier.
+
+---
+
+## 🤝 Join the Community
+
+- 💬 [Discord Server](https://discord.com/invite/6YCQG8N7fv)
+- 🎥 [TikTok @vixenlicious](https://www.tiktok.com/@vixenlicious)
+- 🌐 [VRChat Group](https://vrc.group/THEVIX.5990)
 
 ---
 
 ## 💖 Support the Project
 
-If you love what Stream Connector enables, support its development and future upgrades:
+- 💸 [CashApp](https://cash.app/$Vixenlicious)
+- ☕ [Ko-fi](https://ko-fi.com/vixenlicious)
 
-- 💸 **CashApp** → [https://cash.app/$Vixenlicious](https://cash.app/$Vixenlicious)
-- ☕ **Ko-fi** → [https://ko-fi.com/vixenlicious](https://ko-fi.com/vixenlicious)
+Your support powers continuous updates and new integrations.
 
 ---
 
-## 🛍️ Get Stream Connector
+## 🛍️ Get It Now
 
-This software is exclusive and distributed only through Gumroad:
-
-➡️ **[Download on Gumroad →](https://vixenlicious.gumroad.com/)**
+🔗 [Download on Gumroad →](https://vixenlicious.gumroad.com/)
 
 Includes:
-- Executable application
-- UI assets
-- Default chains and configurations
-- Priority access to new features
+- Executable binary
+- TikFinity ready UI
+- Sample chains
+- Supporter tier activation
 
 ---
 
-## 🔒 License
+## 🧠 Crafted by Vixenlicious
 
-Stream Connector is a **closed-source** premium application provided for personal use only.  
-Redistribution, modification, or reverse engineering is strictly prohibited.
-
----
-
-## 🧠 Built with Passion
-
-Crafted by [@vixenlicious](https://www.tiktok.com/@vixenlicious)  
-Made for immersive creators who demand power, polish, and performance.
-
----
+Built from the ground up to support streamers, VTubers, and immersive creators.  
+Always evolving. Always yours.

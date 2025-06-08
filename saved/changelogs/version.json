@@ -1,4 +1,9 @@
 {
+	"5.5.2": [
+		"HOTFIX: Steam VR Valve Index Issues breaking the program.",
+		"HOTFIX: Certain OSC Assets Causing back log slow startup.",
+		"HOTFIX: Pishock API Response Issues."
+	],
 	"5.5.0": [
 			"FEATURE: Added silver-tier exclusive Pishock Pattern Editor.",
 			"FEATURE: Added new 'pattern' PiShock mode with custom sequence editor.",
