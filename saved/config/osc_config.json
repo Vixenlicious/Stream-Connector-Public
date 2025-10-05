@@ -1,0 +1,5 @@
+{
+  "OSC_IN_ADDR": "127.0.0.1",
+  "OSC_IN_PORT": 9001,
+  "OSC_OUT_PORT": 9000
+}

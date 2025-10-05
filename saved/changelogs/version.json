@@ -1,4 +1,151 @@
 {
+	"6.1.7": [
+			"FEATURE: Incremental device subscription — only new devices are SUBSCRIBED, preventing duplicate subscriptions and SUBSCRIBE_ERROR spam.",
+			"FEATURE: Improved logging and debugging output for subscription flow (targets, counts, ACKs).",
+			"FEATURE: Added internal tracking (_subscribed_targets) to maintain subscription state between refreshes.",
+			"FEATURE: Added New PiShock Controls Drop Down Menu.",
+			"FEATURE: Added New Claim Shared Devices Button, Allowing you to quickly setup devices in software!",
+			"FEATURE: Added new PiShock Quick Test Button, Allowing you to test on the fly!",
+			
+			"BUGFIX: Corrected device target generation to use only client IDs for SUBSCRIBE (removes legacy user ID appending).",
+			"BUGFIX: Resolved UNSUBSCRIBE issues by ensuring only active subscriptions are cleared, preventing UNSUBSCRIBE_ERROR spam.",
+			"BUGFIX: Updated refresh & subscribe workflow to safely combine owned + shared devices without duplicating targets.",
+			"BUGFIX: Incremental subscription now avoids re-subscribing to previously subscribed devices after share code claims.",
+			"BUGFIX: Fixed session race conditions during device refresh after share code claims.",
+			"HOTFIX: General PiShock WebSocket stability improvements and error handling refinements.",
+			
+			"UX CHANGE: Moved the Clear Que button to the Chain Controls Drop Down.",
+			"UX CHANGE: Moved the Emergerncy Stop button to the PiShock Controls Drop Down."
+	],
+	"6.1.3": [
+			"FEATURE: Added Clear Queue Button — now you can instantly clear all queued events on demand.",
+			"FEATURE: Emergency Stop Button relocated to the Special Controls Tab for easier access.",
+			"BUGFIX: Emergency Stop Button now reliably kills all sending operations to fully halt the program.",
+			"BUGFIX: Chain Runner execution slightly optimized for faster processing.",
+			"BUGFIX: GUI spawn times improved for smoother interface loading.",
+			"BUGFIX: Search bar fixed — filtering now updates the table correctly and scrolls to top.",
+			"BUGFIX: Chain Editor checkmark selections now behave correctly.",
+			"BUGFIX: PiShock runner smoothing applied for more fluid device control."
+	],
+	"6.1.2": [
+		"FEATURE: Removed old legacy code blocking users from using the software without vrchat.",
+		"BUGFIX: Fixed broken code from legacy code removal.",
+		"BUGFIX: Fixed Device Schema Frame Naming and Logging Logic.",
+		"BUGFIX: Fixed Pishock website logs, Software now cleanly communicates with pishock."
+	],
+	"6.1.0": [
+		"BUGFIX: Fixed the feature of not saving devices from pishock.",
+		"BUGFIX: Fixed the feature of not pruning devices from pishock Api.",
+		"EXTENDED: New TikTok Gift Mapping Added."
+	],
+	"6.0.9": [
+		"FEATURE: Added VRC OSC Router Support.",
+		"EXPLAIN: You can now edit the osc_config.json under /saved/config/ folder to path into vrc router!"
+	],
+	"6.0.8": [
+		"HOTFIX: Controls Location Logic.",
+		"HOTFIX: Accidentally left the debug logic on causing slow downs.",
+		"REBUILD: Rebuilt TikTok Gift Mapping, the insane amount of gifts caused a slow down."
+	],
+	"6.0.7": [
+		"HOTFIX: VRC Fury Parameter Compressor Logic Fix.",
+		"EXPLAIN: The new behavoir invalidated a ton of controls on large avatars causing them to spill over in Tikfinity, you may need to delete duplicate controls in your lists that don't work.",
+		"HOTFIX: Buttons not having the correct identifier causing some weird issues.",
+		"IMPROVEMENT: Moved Save Layout to the OSC Controls drop down for faster navigation."
+	],
+	"6.0.6": [
+			"FEATURE: New OwO Vest Support Using OwO Visualizer, This is locked behind the Gold License.",
+			"EXPLAIN: OwO Haptic Vest Chains will run the loaded files from /saved/controls/owo and send them to your vest in real time using the OwO Visualizer.",
+			"SPECIAL NOTE: OwO Haptic Vests Support a Maximum of 11 actions per file run and can interupt each other, additional logic to come later to the que mode to correct for this.",
+			"FEATURE: New Save Avatar State Button.",
+			"EXPLAIN: This button serves its purpose by allowing direct saving instead of relying on automatic saves in case you forgot to load in specifically and want to make sure its corrected.",
+			"IMPROVEMENT: Updated TikTok running gift map with expanded metadata and icon caching.",
+			"IMPROVEMENT: Optimized vest dispatch pipeline for fully non-blocking performance during live streams.",
+			"FIX: Added robust error handling for missing or malformed .owo files to prevent silent failures.",
+			"HOTFIX: Resolved rare issue where some live streams have enough viewers the on the fly editor takes forever to load.",
+			"IMPROVEMENT: Added inline tooltip descriptions for all OwO Vest controls in the chain editor UI.",
+			"IMPROVEMENT: Seperated Pishock devices so you can identify which is which in the editor easily.",
+			"IMPROVEMENT: Increased editor speed by up to 57%",
+			"IMPROVEMENT: Streamlined configuration storage for faster template loading and reduced disk I/O.",
+			"MISC: Changed the default loaded drop down to the special tab"
+	],
+	"6.0.4": [
+		"HOTFIX: Fixed Manual Connection Option for TikTok Fallback.",
+		"FEATURE: New Pishock Mode Added called Rage, This Requires the Silver+ License.",
+		"EXPLAIN: Rage Mode Fires a 100ms zap at the duration and intensity you set with half second delay.",
+		"IMPROVEMENT: Updated Tiktok running gift map for summer fest."
+	],
+	"6.0.3": [
+			"FEATURE: Added support popup suppression flag—once user clicks OK or Contact Support, no further popups for this session.",
+			"FEATURE: Custom critical-error message parameter in _show_support_popup to encourage contacting The Vixen Den ASAP.",
+			
+			"FIX: Block next OSC chain execution until the longest per-step reset timer completes—prevents overlapping outfits.",
+			"FIX: _run_pishock_parallel now correctly spawns one thread per selected device for both special and non-special modes.",
+			"FIX: Non-special (chunked) PiShock sender now honors the full total_duration_ms, splitting into successive ≤15 s PUBLISH chunks with proper inter-chunk delays.",
+			"FIX: send_special_mode runner scopes and updates 'intensity' and 'step' correctly, enforces ≥1000 ms per pulse, and prevents UnboundLocalError.",
+			"FIX: Removed overly verbose detect_transport logging from the WebSocket connect loop.",
+			"FIX: Coerce null OriginalCommand to empty string in listener to avoid attribute errors.",
+			"FIX: Skip duplicate CONNECT_ERROR messages to avoid double-counting broker errors.",
+			"FIX: WebSocket listener now counts only real BROKER errors, triggers support popup on the 3rd, and resets its counter on success.",
+			
+			"IMPROVEMENT: Connect loop now resets its error and broker-error counters on successful connection, and applies exponential backoff properly.",
+			"IMPROVEMENT: Support popup now appears after 3 consecutive connection failures and will not reappear until acknowledged.",
+			"IMPROVEMENT: Watch Dog now creates the base files for the client filters using internal dictionary if the file is missing.",
+			"IMPROVEMENT: Subscriptions are now moved to thier own trigger type in the software.",
+			
+			"UX: Support popup foreground color updated to bright white for improved readability."
+	],
+	"6.0.2": [
+		"HOTFIX: Fixed Pishock related runner error that gave math errors."
+	],
+	"6.0.1": [
+		"HOTFIX: Pishock Runner dropping commands have been tightened.",
+		"HOTFIX: Pishock Share Codes no longer available to the user are now properly dropped.",
+		"HOTFIX: Pishock Share Codes now properly merge on share code change.",
+		"HOTFIX: Chain Editor can no longer open a ton of editor windows at the same time.",
+		"HOTFIX: Implemented a new watch dog system to automatically quiet down noisy avatars."
+	],
+	"6.0.0": [
+		"FEATURE: Shock Together – Collaborate with friends and experience synchronized live shocks!",
+		"FEATURE: New Trigger Type: Diamond Count – Activate chains based on the total diamonds received.",
+		"FEATURE: Precision Filtering – Set exact values and thresholds for refined trigger control.",
+		"FEATURE: Gift Count Threshold – Fire chains only when specific gift counts are met.",
+		"FEATURE: Gifter Level, Subscriber, and Moderator Filters – Limit triggers to specific user roles.",
+		
+		"IMPROVEMENT: General UI cleanup for a smoother and more intuitive experience.",
+		"IMPROVEMENT: Internal filter system refactored to minimize log spam and boost efficiency.",
+		"IMPROVEMENT: Enhanced PiShock integration with smarter logic and better reliability.",
+		"IMPROVEMENT: Tooltips added across the editor to guide you through each feature effortlessly.",
+		"IMPROVEMENT: Chain Runner now operates on a dedicated handler for significantly faster execution.",
+		"IMPROVEMENT: Controls Builder has its own handler, boosting startup and UI responsiveness.",
+		"IMPROVEMENT: Optimized startup performance when using heavy avatars – no more slowdowns.",
+		"IMPROVEMENT: TikTok gift mapping updated for improved accuracy and future compatibility.",
+		"IMPROVEMENT: Importing Chains now converts pishock devices automatically but you must reselect your device when importing.",
+		
+		"FIX: 'Reset Before' logic now functions correctly during chain execution.",
+		"FIX: Right-click copy/paste restored in the config editor.",
+		"FIX: Eliminated face and full-body tracking spam bugs.",
+		"FIX: Fixed edge case crash in the priority queue under specific conditions.",
+		"FIX: Resolved rare disconnection bug with TikFinity integration.",
+		"FIX: Patched crash caused by TikFinity edge-case failures.",
+		"FIX: Fixed GUI freezing issues tied to specific trigger combinations.",
+		"FIX: Addressed PiShock stalling and live listener crash scenarios.",
+		"FIX: App version now accurately displays in the window title bar.",
+		"FIX: Fixed a rare bug where commands were silently ignored.",
+		"FIX: Prevented parameter spam and tooltip crashes caused by bad widget references.",
+		"FIX: Trigger-specific UI components now reliably load on startup.",
+		"FIX: Gift Mapping Missing over 200 different gifts.",
+		"FIX: Randomizer Not setting the delay and duration the same causing commands not to send correctly.",
+		"FIX: Fixed an issue where normal zaps would cancel out each other.",
+		"FIX: Fixed an issue where devices would not run simulateounously.",
+		"FIX: Fixed an issue where the normal chains would cancel out the special modes.",
+		"FIX: Fixed an issue where exporting chains would not show the prompt telling you.",
+		"FIX: Fixed an issue where the internal queue system wouldn't lock the runner.",
+		
+		"INTERNAL/DEV: Emulated Android client parameters in TikTokLiveConnection to retrieve the full (mobile + web) gift catalog.",
+		"INTERNAL/DEV: Refactored giftMapping script to replace deprecated getAvailableGifts() calls with fetchAvailableGifts().",
+		"INTERNAL/DEV: Corrected HTTP client usage—switched from `url` to `path` in webClient.request to eliminate the startsWith TypeError."
+	],
 	"5.5.2": [
 		"HOTFIX: Steam VR Valve Index Issues breaking the program.",
 		"HOTFIX: Certain OSC Assets Causing back log slow startup.",
