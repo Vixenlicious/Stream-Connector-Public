@@ -76,15 +76,13 @@ License is verified and cached on launch. Fallbacks and UI behaviors depend on t
 
 ## 🤝 Join the Community
 
-- 💬 [Discord Server](https://discord.com/invite/6YCQG8N7fv)
-- 🎥 [TikTok @vixenlicious](https://www.tiktok.com/@vixenlicious)
+- 💬 [Discord Server](https://discord.gg/AzjwzMJU6K)
+- 🎥 [My Socials](https://vixenlicious.carrd.co/)
 - 🌐 [VRChat Group](https://vrc.group/THEVIX.5990)
 
 ---
 
 ## 💖 Support the Project
-
-- 💸 [CashApp](https://cash.app/$Vixenlicious)
 - ☕ [Ko-fi](https://ko-fi.com/vixenlicious)
 
 Your support powers continuous updates and new integrations.
