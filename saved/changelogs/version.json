@@ -1,11 +1,68 @@
 {
+  "6.2.0": [
+    "FEATURE: Introduced dedicated External Integration API server on port 8840 for high-performance external automation.",
+    "FEATURE: Added /api/external/exec endpoint supporting JSON, form, and query payloads for maximum platform compatibility.",
+    "FEATURE: Added /api/external/info and /api/external/list discovery endpoints.",
+    "FEATURE: Unified execution pipeline for HTTP and Streamer.bot events.",
+    "FEATURE: Implemented bot-safe response model (no 4xx on validation errors).",
+    "FEATURE: Full CORS support for OBS Browser, local dashboards, and helper tools.",
+
+    "FEATURE: Fully rewritten Streamer.bot 1.0.x WebSocket listener with correct General → Custom subscription model.",
+    "FEATURE: Added clean reconnect logic with exponential backoff (no reconnect storms).",
+    "FEATURE: Implemented crash containment and defensive parsing on all WebSocket handlers.",
+
+    "FEATURE: Introduced production-grade typed event system.",
+    "FEATURE: Added ExternalHookEvent parser.",
+    "FEATURE: Added TwitchChatEvent parser.",
+    "FEATURE: Added TwitchSubEvent parser.",
+    "FEATURE: Added TwitchCheerEvent parser.",
+    "FEATURE: Added ObsSceneEvent parser.",
+    "FEATURE: Added TimerEvent parser.",
+    "FEATURE: Added ButtonEvent parser.",
+
+    "IMPROVEMENT: Normalized provider namespace handling across all ingress layers.",
+    "IMPROVEMENT: Hardened commandId resolution and routing logic.",
+    "IMPROVEMENT: Context parsing now fault-tolerant with raw fallback support.",
+    "IMPROVEMENT: Structured logging added for all external execution calls.",
+    "IMPROVEMENT: Dedicated external integration log channel added.",
+    "IMPROVEMENT: Clean separation between transport, parsing, and execution layers.",
+
+    "FIX: Corrected Streamer.bot subscription shape mismatch causing silent failures.",
+    "FIX: Resolved WebSocket reconnect storm behavior under disconnect conditions.",
+    "FIX: Fixed malformed payload crashes in custom event handling.",
+    "FIX: Fixed context string parsing edge cases.",
+    "FIX: Fixed duplicate execution edge cases during rapid event bursts.",
+
+    "SECURITY: Enforced loopback-only binding for External Integration API.",
+    "SECURITY: Added input validation for provider and commandId.",
+    "SECURITY: Isolated malformed context payloads to prevent execution corruption.",
+    "SECURITY: Hardened ingress crash containment across all entry points.",
+
+    "UX CHANGE: Upgraded Windows manifest to Per-Monitor v2 DPI awareness for crisp multi-monitor scaling.",
+    "UX CHANGE: Updated application version metadata for clean Windows Explorer display.",
+
+    "PERFORMANCE: External execution pipeline optimized for low-latency routing.",
+    "PERFORMANCE: WebSocket event handling optimized for high-throughput scenarios.",
+    "PERFORMANCE: Reduced overhead in event parsing and dispatch layers.",
+
+    "INTERNAL: Added EVENT_PARSERS registry for centralized typed dispatch.",
+    "INTERNAL: Refactored external execution pipeline for maintainability.",
+    "INTERNAL: Centralized typed event routing layer implemented.",
+    "INTERNAL: Improved separation between business logic and transport layers.",
+
+    "BREAKING: Raw dict event handling is deprecated. All inbound events now pass through typed parsers.",
+    "BREAKING: Streamer.bot events must now include type, provider, and commandId fields or will be ignored."
+  ],
 	"6.1.7": [
 			"FEATURE: Incremental device subscription — only new devices are SUBSCRIBED, preventing duplicate subscriptions and SUBSCRIBE_ERROR spam.",
 			"FEATURE: Improved logging and debugging output for subscription flow (targets, counts, ACKs).",
 			"FEATURE: Added internal tracking (_subscribed_targets) to maintain subscription state between refreshes.",
 			"FEATURE: Added New PiShock Controls Drop Down Menu.",
+			"FEATURE: Fully Overhauled how PiShock Devices are controlled! We now use the same method as PiShocks Website!",
+			"FEATURE: Unified Controls method! You can now throw as many pishocks as you want at it!",
 			"FEATURE: Added New Claim Shared Devices Button, Allowing you to quickly setup devices in software!",
 			"FEATURE: Added new PiShock Quick Test Button, Allowing you to test on the fly!",
+			"FEATURE: Added new PiShock Quick Select Drop Down, Allowing you to select and test on the fly!",
 			
 			"BUGFIX: Corrected device target generation to use only client IDs for SUBSCRIBE (removes legacy user ID appending).",
 			"BUGFIX: Resolved UNSUBSCRIBE issues by ensuring only active subscriptions are cleared, preventing UNSUBSCRIBE_ERROR spam.",
@@ -15,7 +72,16 @@
 			"HOTFIX: General PiShock WebSocket stability improvements and error handling refinements.",
 			
 			"UX CHANGE: Moved the Clear Que button to the Chain Controls Drop Down.",
-			"UX CHANGE: Moved the Emergerncy Stop button to the PiShock Controls Drop Down."
+			"UX CHANGE: Moved the Emergerncy Stop button to the PiShock Controls Drop Down.",
+			"UX CHANGE: Added the ability to remove steps in patterns.",
+			"UX CHANGE: Chains will now regrid themselves properly!",
+			"UX CHANGE: Added New Kofi Button! Please consider supporting!",
+			"UX CHANGE: Added New TikTok Button! Please consider giving me a follow!",
+			
+			"PERFORMANCE: PiShock Operations are now Instant!",
+			"PERFORMANCE: Avatar Changes are now Instant!",
+			"PERFORMANCE: GUI Registering is now Instant!",
+			"PERFORMANCE: HUGE Gains on overall Performance! Now 78% More Effiecient!"
 	],
 	"6.1.3": [
 			"FEATURE: Added Clear Queue Button — now you can instantly clear all queued events on demand.",
