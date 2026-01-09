@@ -1,0 +1,22 @@
+C:\Program Files\Windows Defender>MpCmdRun.exe -SignatureUpdate
+Signature update started . . .
+Service Version: 4.18.25110.6
+Engine Version: 1.1.25110.1
+AntiSpyware Signature Version: 1.443.582.0
+AntiVirus Signature Version: 1.443.582.0
+Signature update finished.
+
+C:\Program Files\Windows Defender>MpCmdRun.exe -ValidateMapsConnection
+---------------------------- MpCmdRunShowNetworkInfo() ------------------------------
+MpIsConnectedToInternet(): hr = 0, fIsConnectToInternet: true
+MpIsPaidNetwork(): hr = 0x1 (0 - S_OK, paid; 1 - S_FALSE, not paid; other - failure)
+-------------------------------------------------------------------------------------
+Last Successful MAPS connection: [9/1/26 11:36:43 AM]
+ValidateMapsConnection successfully established a connection to MAPS
+
+C:\Program Files\Windows Defender>MpCmdRun.exe -Scan -ScanType 3 -CpuThrottling 100 -File "G:\Stream-Connector\dist\release\Stream Connector.exe"
+Scan starting...
+Scan finished.
+Scanning G:\Stream-Connector\dist\release\Stream Connector.exe found no threats.
+
+C:\Program Files\Windows Defender>
