@@ -1,4 +1,44 @@
 {
+	"6.2.1": [
+			"FEATURE: Fully encrypted, machine-bound license storage using Fernet cryptography (no plaintext license files).",
+			"FEATURE: Hardware fingerprint binding added to all licenses to prevent cross-system sharing.",
+			"FEATURE: Sealed Gold Trial system with encrypted start date and tamper detection.",
+			"FEATURE: Atomic encrypted license writes with temp-file replace strategy for corruption safety.",
+			"FEATURE: Live license revalidation on config save with immediate tier/flag refresh.",
+			"FEATURE: Production-hardened PyInstaller pipeline with explicit hidden-import coverage for all dynamic modules.",
+			"FEATURE: Custom windowed bootloader support for cleaner startup behavior.",
+			"FEATURE: Full EXE + MSI code signing pipeline with SHA256 + timestamping.",
+			"FEATURE: WiX v4 installer integration with automatic saved/ directory injection.",
+
+			"BUGFIX: Invalid, revoked, or failed license validation no longer falls back to trial mode.",
+			"BUGFIX: Closed trial reset abuse via license file deletion or corruption.",
+			"BUGFIX: Corrupt or tampered license payloads now hard-invalidate instead of recovering.",
+			"BUGFIX: Trial banner no longer appears on licensed systems.",
+			"BUGFIX: TikFinity disconnected spam eliminated via connection state guards.",
+			"BUGFIX: Streamer.bot WebSocket reconnect storms fixed with proper backoff handling.",
+			"BUGFIX: External API dispatch stability improvements and error isolation.",
+			"BUGFIX: Multiple silent crashes resolved in OSC parameter fetching and chain execution.",
+			"BUGFIX: Watchdog + zeroconf runtime crashes resolved in packaged builds.",
+			"BUGFIX: Cryptography module resolution failures fixed in onefile builds.",
+
+			"UX CHANGE: Encrypted license + supporter keys now editable directly from config editor.",
+			"UX CHANGE: License UI now hard-blocks on invalid states with no silent downgrade.",
+			"UX CHANGE: Trial messaging only appears when genuinely applicable.",
+			"UX CHANGE: Cleaner startup flow with reduced boot noise and dialog spam.",
+
+			"SECURITY: Trial abuse vectors fully closed (file deletion, date tampering, machine transfer).",
+			"SECURITY: License tampering now results in permanent invalidation.",
+			"SECURITY: DRM logic now fails closed and silent on any anomaly.",
+
+			"PERFORMANCE: Reduced startup overhead by eliminating redundant license parsing.",
+			"PERFORMANCE: Improved thread safety across TikFinity listener and event dispatch queue.",
+			"PERFORMANCE: Faster chain execution path with reduced lock contention.",
+
+			"DEV: Single-file safe cryptography architecture (no external key files or env dependencies).",
+			"DEV: Expanded hidden-import coverage for TikTokLive, websockets, watchdog, zeroconf, tkinter, PIL, cryptography.",
+			"DEV: Build script hardened for non-standard Python install paths.",
+			"DEV: Improved logging clarity across DRM, TikFinity, external API, and build pipeline."
+	],
   "6.2.0": [
     "FEATURE: Introduced dedicated External Integration API server on port 8840 for high-performance external automation.",
     "FEATURE: Added /api/external/exec endpoint supporting JSON, form, and query payloads for maximum platform compatibility.",

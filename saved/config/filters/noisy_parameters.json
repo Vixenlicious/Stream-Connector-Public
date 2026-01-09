@@ -525,6 +525,18 @@
     {
       "pattern": "LipTrackingActive",
       "sanitize": true
+    },
+    {
+      "pattern": "/avatar/parameters/Go/",
+      "sanitize": true
+    },
+    {
+      "pattern": "/avatar/parameters/OGB/",
+      "sanitize": true
+    },
+    {
+      "pattern": "/avatar/parameters/OSCm/",
+      "sanitize": true
     }
   ],
   "vrcfury_high_noise": [
@@ -546,6 +558,10 @@
     },
     {
       "pattern": "SyncPointer",
+      "sanitize": true
+    },
+    {
+      "pattern": "LastSynced",
       "sanitize": true
     }
   ]
