@@ -1,4 +1,43 @@
 {
+	"6.2.2": [
+			"FEATURE: Random PiShock device selection engine added with per-chain and random-trigger support.",
+			"FEATURE: Random device routing fully integrated across standard, hybrid, standalone, and random chain modes.",
+			"FEATURE: Multi-device selection filtering now supports bulk add/remove instead of single-item only.",
+			"FEATURE: Global top-level verbose logger implemented for unified debug output across core systems.",
+			"FEATURE: Chain runner upgraded to support randomized device targeting without breaking priority queue logic.",
+			"FEATURE: Random trigger chains now properly randomize both steps and device targets.",
+			"FEATURE: Queue worker upgraded to support parallel PiShock + OwO + OSC execution without blocking.",
+			"FEATURE: PiShock parallel helper upgraded with random device injection support.",
+			"FEATURE: Executor path upgraded to support random device routing in all standalone and hybrid modes.",
+
+			"BUGFIX: Fixed chain runner only selecting first device instead of full eligible device pool.",
+			"BUGFIX: Fixed random chains incorrectly reusing stale device lists.",
+			"BUGFIX: Fixed PiShock-only chains ignoring selected device filters in some execution paths.",
+			"BUGFIX: Fixed queue worker blocking on PiShock threads in non-blocking modes.",
+			"BUGFIX: Fixed silent failures when random chains were triggered from queue worker thread.",
+			"BUGFIX: Fixed reset-after timers misfiring when random chains were active.",
+			"BUGFIX: Fixed UI desync when deleting multiple filtered controls at once.",
+
+			"UX CHANGE: Filter-out controls now support multi-select operations for faster workflow.",
+			"UX CHANGE: Chain execution status now accurately reflects hybrid + parallel execution states.",
+			"UX CHANGE: Reduced UI freeze during random chain execution by offloading heavy work to worker threads.",
+
+			"SECURITY: Random device selection respects existing license tier enforcement with no bypass paths.",
+			"SECURITY: Parallel execution paths hardened to prevent race conditions during device dispatch.",
+			"SECURITY: Additional Anti-Tamper Controls Added to the software.",
+
+			"PERFORMANCE: Reduced lock contention in chain runner during parallel PiShock + OSC execution.",
+			"PERFORMANCE: Improved queue throughput by eliminating unnecessary thread joins.",
+			"PERFORMANCE: Faster random chain execution with optimized shuffle + dispatch logic.",
+
+			"DEV: Core chain engine fully refactored to support random routing without duplication.",
+			"DEV: Queue worker, executor, and random runner logic unified for consistent behavior.",
+			"DEV: Parallel PiShock helper updated for deterministic thread lifecycle management.",
+			"DEV: Global logger architecture introduced for consistent debug visibility across systems.",
+			"DEV: Expanded PyInstaller hidden-import coverage for threading, asyncio, inspect, concurrent.futures, and random.",
+			"DEV: Build pipeline updated to support new async + threaded execution paths.",
+			"DEV: Internal code paths cleaned and normalized for future logic engine extensions."
+	],
 	"6.2.1": [
 			"FEATURE: Fully encrypted, machine-bound license storage using Fernet cryptography (no plaintext license files).",
 			"FEATURE: Hardware fingerprint binding added to all licenses to prevent cross-system sharing.",

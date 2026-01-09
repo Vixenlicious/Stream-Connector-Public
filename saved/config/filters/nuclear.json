@@ -28,7 +28,8 @@
     "/avatar/parameters/ScaleFactor",
     "/avatar/parameters/TrackingType",
     "/avatar/parameters/FloorHeight",
-    "/avatar/parameters/DoubleThumbs"
+    "/avatar/parameters/DoubleThumbs",
+    "/avatar/parameters/VF182_shook_Angle"
   ],
   "tracking_fuzzy_suffixes": [
     "AnkleCor_L_Angle",
