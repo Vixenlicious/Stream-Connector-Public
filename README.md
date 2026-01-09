@@ -2,19 +2,23 @@
 
 **Stream Connector/**
 - **saved/** – Central storage for all app data  
-  - **changelogs/** – Markdown and JSON logs for UI release notes  
-    - `version.json` – Read at runtime for version change UI  
-  - **config/** – Main configuration directory  
-    - **devices/** – PiShock registered devices  
-    - **filters/** – Log filter profiles  
-      - `noisy_parameters.json` – User-tunable log filter  
-    - **userdata/** – License validation and tier info  
-      - `license.json` – Created/updated on launch  
-  - **controls/** – Stored control profiles  
-    - **backup/** – Auto-saved control backups  
-  - **radials/** – Reserved for future radial menu support  
-  - `giftMapping.json` – Required for chain preview icons and values  
-- `Stream Connector.exe` – Compiled application binary  
+  - **changelogs/** – Markdown and JSON logs for UI release notes
+    - `version.json` – Read at runtime for version change UI
+  - **config/** – Main configuration directory
+    - **devices/** – PiShock registered devices
+    - **filters/** – Log filter profiles
+      - `noisy_parameters.json` – User-tunable log filter
+      - `nuclear.json` – User-tunable log filter
+    - **userdata/** – License validation and tier info
+      - `license.json` – Created/updated on launch
+  - **controls/** – Stored control profiles
+    - **backup/** – Auto-saved control backups
+    - **chains/** - The core files that run it all
+       - **backup/** - Backup chain files that create automatically
+    - **export/** - Exported chain files that can be imported to different avatars
+    - **owo/** - owo control files created by users with the [Sensations Creator](https://owo-game.gitbook.io/owo-api/tools/sensations-creator)
+  - `giftMapping.json` – Required for chain preview icons and values
+- `Stream Connector.exe` – Compiled application binary
 
 ---
 
