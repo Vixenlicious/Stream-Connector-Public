@@ -1,4 +1,53 @@
 {
+	"6.2.3": [
+		"FEATURE: Advanced weighted PiShock device randomization engine added with per-device bias control.",
+		"FEATURE: Support added for pishock_random_min / pishock_random_max device selection ranges.",
+		"FEATURE: No-repeat window support added for PiShock random routing (pishock_random_no_repeat_s).",
+		"FEATURE: Core device selection logic centralized for all execution paths (standalone, hybrid, random, queue).",
+		"FEATURE: Broker error escalation system added with user-facing diagnostics and cooldown handling.",
+		"FEATURE: Support popup system hardened with reentrancy guards and cooldown suppression.",
+		"FEATURE: Global PiShock busy-gate now enforced across all parallel and non-blocking execution paths.",
+
+		"BUGFIX: Fixed inline randomization causing duplicate device dispatch under concurrent execution.",
+		"BUGFIX: Fixed race conditions from shallow device list copies in threaded PiShock paths.",
+		"BUGFIX: Fixed intermittent 'no valid device IDs' failures during random-trigger chains.",
+		"BUGFIX: Fixed PiShock parallel helper spawning ghost workers under high concurrency.",
+		"BUGFIX: Fixed queue worker starvation caused by double-blocking duration sleeps.",
+		"BUGFIX: Fixed hybrid chains incorrectly re-randomizing devices mid-execution.",
+		"BUGFIX: Fixed PiShock-only random loops leaking shared mutable device state.",
+		"BUGFIX: Fixed broker connection errors being silently swallowed and ignored.",
+		"BUGFIX: Fixed support popup thread safety issues causing UI instability.",
+		"BUGFIX: Fixed repeated popup spam due to missing reentrancy guards.",
+		"BUGFIX: Fixed chain execution aborts caused by selector signature mismatch.",
+		"BUGFIX: Fixed parallel PiShock threads completing early due to incorrect lifetime enforcement.",
+
+		"UX CHANGE: Support popup now uses cooldown-based suppression instead of permanent disable.",
+		"UX CHANGE: Broker connectivity failures now surface immediately with actionable user guidance.",
+		"UX CHANGE: Chain execution status now accurately reflects true hardware execution state.",
+		"UX CHANGE: Reduced UI lockups during heavy parallel PiShock + OwO + OSC execution.",
+
+		"SECURITY: Removed all inline entropy injection paths to prevent logic manipulation.",
+		"SECURITY: Centralized randomization pipeline hardened against injection and state corruption.",
+		"SECURITY: Parallel execution paths further hardened against race conditions and state bleed.",
+		"SECURITY: Broker error handling tightened to prevent silent execution bypass.",
+		"SECURITY: Additional Anti-Tamper Controls Added to the software.",
+
+		"PERFORMANCE: Reduced lock contention in parallel PiShock dispatch.",
+		"PERFORMANCE: Improved queue worker throughput by eliminating redundant joins and sleeps.",
+		"PERFORMANCE: Optimized weighted random selection algorithm for large device pools.",
+		"PERFORMANCE: Reduced thread churn in random-trigger execution loops.",
+		"PERFORMANCE: Improved overall chain scheduling stability under sustained load.",
+
+		"DEV: Core PiShock device selection engine fully rewritten and normalized.",
+		"DEV: All execution paths (executor, queue worker, random runner, hybrid) unified to a single selector pipeline.",
+		"DEV: Parallel PiShock helper fully refactored for deterministic thread lifecycle management.",
+		"DEV: Broker message handler hardened with structured escalation and gating.",
+		"DEV: Support popup system refactored for strict main-thread UI safety.",
+		"DEV: Removed all legacy inline randomization code paths.",
+		"DEV: Internal state handling normalized to eliminate shared mutable structures.",
+		"DEV: Additional debug instrumentation added to random routing and parallel dispatch.",
+		"DEV: Build pipeline updated to reflect hardened threading and async execution model."
+	],
 	"6.2.2": [
 			"FEATURE: Random PiShock device selection engine added with per-chain and random-trigger support.",
 			"FEATURE: Random device routing fully integrated across standard, hybrid, standalone, and random chain modes.",
