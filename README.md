@@ -6,6 +6,8 @@
     - `version.json` – Read at runtime for version change UI
   - **config/** – Main configuration directory
     - **devices/** – PiShock registered devices
+    - **routing/** – Network App Configuration Storage (v6.3+ Only)
+      - `osc_config.json` – User-tunable OSC (VRChat) Network File (Uses OSCQuery First)
     - **filters/** – Log filter profiles
       - `noisy_parameters.json` – User-tunable log filter
       - `nuclear.json` – User-tunable log filter
