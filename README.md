@@ -28,13 +28,16 @@ Designed with creators in mind, it fuses modern Python capabilities, VRChat OSC,
 - Custom pattern modes (licensed only: Bronze+ required)
 - Owned/shared device logic
 
-### 🖥️ Flask API & Web Layer
-- Integrate with Twitch, Webhooks, or OBS via REST
-- Supports live reload, diagnostics, and OSC injection
+### 😈 Your Toys Your Rules (v6.3.0+)
+- Realtime WebSocket JSON v3 Shema support
+- Get Intimate nice and slow or Hard and Fast with Intiface
+- Control any connected bluetooth supported Scalar Actuator
+- "Came for the party, stayed for the kink"
 
 ### 🌐 Twitch, YouTube, Kick under 1 roof
 - Purpose Built Engine and API Handler for Streamer.bot
 - Purpose Built API for External Tools and Plugins
+- Supports live reload, diagnostics, and OSC injection
 ---
 
 ## 🛡️ Licensing & Tiers
