@@ -6,6 +6,7 @@
 
 Designed with creators in mind, it fuses modern Python capabilities, VRChat OSC, TikTok Live events, PiShock integration, and a powerful reactive chain engine.
 
+#### Already Have the program? Nice! Get Started Here! [Visit the Wiki](https://github.com/Vixenlicious/Stream-Connector-Public/wiki)
 ---
 
 ## 🌟 Features Summary
