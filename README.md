@@ -47,7 +47,7 @@ Designed with creators in mind, it fuses modern Python capabilities, VRChat OSC,
   - Bronze+ → Advanced PiShock modes
   - Silver+ → Pattern Editor
   - Gold+ → Full feature unlock, early features, diagnostics
-  - Subscriber (planned $9.99 a Month for Intimacy Driving v6.3.0.0+)
+  - Subscriber (planned $9.99 a Month for Intimacy Driving v6.3.0+)
 
 License is verified and encrypted on launch. Fallbacks and UI behaviors depend on tier.
 
@@ -58,11 +58,7 @@ License is verified and encrypted on launch. Fallbacks and UI behaviors depend o
 - 💬 [Discord Server](https://discord.gg/AzjwzMJU6K)
 - 🎥 [My Socials](https://vixenlicious.carrd.co/)
 - 🌐 [VRChat Group](https://vrc.group/THEVIX.5990)
-
----
-
-## 💖 Support the Project
-- ☕ [Ko-fi](https://ko-fi.com/vixenlicious)
+- ☕ Buy Me A Coffee [Ko-fi](https://ko-fi.com/vixenlicious)
 
 Your support powers continuous updates and new integrations.
 
@@ -70,7 +66,7 @@ Your support powers continuous updates and new integrations.
 
 ## 🛍️ Try it today!
 
-🔗 [Download on Gumroad →](https://vixenlicious.gumroad.com/l/StreamConnectorTrial)
+🔗 Download on Gumroad → [Try Before You Buy Trial](https://vixenlicious.gumroad.com/l/StreamConnectorTrial)
 
 Includes:
 - Executable binary
