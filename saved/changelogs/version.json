@@ -1,4 +1,8 @@
 {
+	"6.2.4": [
+			"CRITICAL BUGFIX: Fixed User.json getting accidentally nuked by the encryption logic",
+			"BUGFIX: Fixed legacy code not pre-generating the user.json on first run."
+	],
 	"6.2.3": [
 		"FEATURE: Advanced weighted PiShock device randomization engine added with per-device bias control.",
 		"FEATURE: Support added for pishock_random_min / pishock_random_max device selection ranges.",
