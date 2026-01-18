@@ -1,41 +1,6 @@
-# 📁 File Structure
-
-**Stream Connector/**
-- **saved/** – Central storage for all app data  
-  - **changelogs/** – Markdown and JSON logs for UI release notes
-    - `version.json` – Read at runtime for version change UI
-  - **config/** – Main configuration directory
-    - **devices/** – PiShock registered devices
-    - **routing/** – Network App Configuration Storage (v6.3+ Only)
-      - `osc_config.json` – User-tunable OSC (VRChat) Network File (Uses OSCQuery First)
-    - **filters/** – Log filter profiles
-      - `noisy_parameters.json` – User-tunable log filter
-      - `nuclear.json` – User-tunable log filter
-    - **userdata/** – License validation and tier info
-      - `license.json` – Created/updated on launch
-  - **controls/** – Stored control profiles
-    - **backup/** – Auto-saved control backups
-    - **chains/** - The core files that run it all
-       - **backup/** - Backup chain files that create automatically
-    - **export/** - Exported chain files that can be imported to different avatars
-    - **owo/** - owo control files created by users with the [Sensations Creator](https://owo-game.gitbook.io/owo-api/tools/sensations-creator)
-  - `giftMapping.json` – Required for chain preview icons and values
-- `Stream Connector.exe` – Compiled application binary
-
----
-
-### 📌 Notes
-
-- All persistent user data lives under `saved/` — including licenses, logs, and controls.
-- `license.json` now includes both primary DRM and supporter key fields.
-- `giftMapping.json` must be valid for chain UI previews to work properly.
-- `radials/` is a placeholder for upcoming radial dial/slider support.
-
----
-
 # Stream Connector
 
-### 🔗 The Ultimate Interactive Control Engine for TikFinity, TikTok, VRChat, and Shock Feedback
+### 🔗 The Ultimate Interactive Control Engine for TikFinity, Twitch, YouTube, Kick, TikTok, VRChat, and Shock Feedback
 
 **Stream Connector** is a purpose-built, GUI-powered platform for streamers and avatar creators who demand full control over event responses, PiShock devices, and real-time avatar logic.
 
@@ -66,6 +31,9 @@ Designed with creators in mind, it fuses modern Python capabilities, VRChat OSC,
 - Integrate with Twitch, Webhooks, or OBS via REST
 - Supports live reload, diagnostics, and OSC injection
 
+### 🌐 Twitch, YouTube, Kick under 1 roof
+- Purpose Built Engine and API Handler for Streamer.bot
+- Purpose Built API for External Tools and Plugins
 ---
 
 ## 🛡️ Licensing & Tiers
@@ -75,8 +43,9 @@ Designed with creators in mind, it fuses modern Python capabilities, VRChat OSC,
   - Bronze+ → Advanced PiShock modes
   - Silver+ → Pattern Editor
   - Gold+ → Full feature unlock, early features, diagnostics
+  - Subscriber (planned $9.99 a Month for Intimacy Driving v6.3.0.0+)
 
-License is verified and cached on launch. Fallbacks and UI behaviors depend on tier.
+License is verified and encrypted on launch. Fallbacks and UI behaviors depend on tier.
 
 ---
 
@@ -95,19 +64,20 @@ Your support powers continuous updates and new integrations.
 
 ---
 
-## 🛍️ Get It Now
+## 🛍️ Try it today!
 
-🔗 [Download on Gumroad →](https://vixenlicious.gumroad.com/)
+🔗 [Download on Gumroad →](https://vixenlicious.gumroad.com/l/StreamConnectorTrial)
 
 Includes:
 - Executable binary
 - TikFinity ready UI
-- Sample chains
-- Supporter tier activation
+- Streamer.bot Ready Engine
+- StreamConnector API for Plugins
+- Fully Decked out Streamer Kit
 
 ---
 
 ## 🧠 Crafted by Vixenlicious
 
-Built from the ground up to support streamers, VTubers, and immersive creators.  
+Built from the ground up to support anything you want to do with constant inovation.  
 Always evolving. Always yours.
